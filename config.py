@@ -2,7 +2,6 @@
 OPENAI_API_KEY = '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'
 
 
-
 ## FLASK STUFF
 class Config(object):
     DEBUG = True
