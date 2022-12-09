@@ -12,7 +12,7 @@ app.config.from_object(config.config['development'])
 app.register_error_handler(404, page_not_found)
 
 
-@app.route('/', methods=["GET", "POST"])
+@app.route('/route/', methods=["GET", "POST"])
 def index():
 
     if request.method == 'POST':
@@ -32,7 +32,11 @@ def index():
             blogExpanded = blogT.replace('\n', '<br>')
 
 
-    return render_template('index.html', **locals())
+    return render_template('get-started.html', **locals())
+
+@app.route('/')
+def route1():
+    return render_template('index.html')    
 
 
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
 ##OPEN API STUFF
-OPENAI_API_KEY = 'sk-yourkey'
+# OPENAI_API_KEY = 'sk-yourkey'
+OPENAI_API_KEY = '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'
 
 
 ## FLASK STUFF
